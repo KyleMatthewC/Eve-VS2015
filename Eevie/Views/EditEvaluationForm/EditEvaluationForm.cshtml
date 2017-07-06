@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "EditEvaluationForm";
+    Layout = null;
+}
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Edit Form</title>
+</head>
+<body>
+    <!--Navbar-->
+    @Html.Partial("../Shared/_InactiveNavbar")
+
+    <h1>Edit form</h1>
+    <button onclick="@("window.location.href='" + @Url.Action("UserHome", "Home") + "'");">Back</button>
+</body>
+

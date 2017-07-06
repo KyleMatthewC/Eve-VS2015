@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "TemplateEvaluationSummary";
+    Layout = null;
+}
+
+<head>
+    <title>Summary</title>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--Nav Bar-->
+    @Html.Partial("../Shared/_InactiveNavbar")
+
+    <!--Summary-->
+    <div class="container">
+        <div id="evaluationsummary">
+            <h1>FORM NAME</h1>
+            <button class="btn btn-lg btn-primary" onclick="@("window.location.href='" + @Url.Action("NewEvaluation", "FillUpEvaluationForm") + "'");">
+                <span class="glyphicon glyphicon-pencil"></span> New
+            </button>
+            <div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Score</th>
+                            <th>Date Evaluated</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="cursor:pointer" onclick="@("window.location.href='" + @Url.Action("EditEvaluation", "EditEvaluation") + "'");">
+                            <td>Sample Name</td>
+                            <td>1</td>
+                            <td>June 23, 2017</td>
+                            <td>
+                                <button type="button" class="btn btn-default btn-sm" onclick="@("window.location.href='" + @Url.Action("EditEvaluation", "EditEvaluation") + "'");">
+                                    <span class="glyphicon glyphicon-edit"></span> Edit
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm" onclick="location.href='#'">
+                                    <span class="glyphicon glyphicon-trash"></span> Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div><!--Summary-->
+    </div>
+</body>

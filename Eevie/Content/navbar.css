@@ -1,0 +1,80 @@
+#eevie-navbar{
+    font-family: 'Roboto', sans-serif;
+    height:60px;
+    padding-left: 15.5em;
+    padding-right: 15.5em;
+}
+
+li{
+    width: 150px;
+    text-align: center;
+}
+
+li.logout{
+    border-left: 1px solid #bbb;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+
+}
+
+.navbar-brand{
+    width: 200px;
+}
+
+#eevie-navbar.navbar-default .navbar-brand {
+    font-style: italic;
+    color: #FFFEFF;
+}
+#eevie-navbar.navbar-default {
+    font-size: 18px;
+    background-color: #646477;
+    border-color: #5B5B6D;
+    border-bottom-width: 0px;
+}
+#eevie-navbar.navbar-default .navbar-nav>li>a {
+    color: #FFFEFF;
+    background-color: #646477;
+    border-color: #5B5B6D;
+}
+#eevie-navbar.navbar-default .navbar-nav>li>a:hover,
+#eevie-navbar.navbar-default .navbar-nav>li>a:focus {
+    color: #FFFEFF;
+    background-color: #3B3B43;
+    border-color: #36363D;
+}
+#eevie-navbar.navbar-default .navbar-nav>.active>a,
+#eevie-navbar.navbar-default .navbar-nav>.active>a:focus {
+    color: #FFFEFF;
+    background-color:#3CC47C;
+    border-color:#37B371;
+}
+
+#eevie-navbar.navbar-default .navbar-nav>.active>a:hover{
+    color: #FFFEFF;
+    background-color: #3B3B43;
+    border-color: #36363D;
+}
+
+#eevie-navbar.navbar-default .navbar-toggle {
+    background-color:#3CC47C;
+    border-color:#37B371;
+}
+#eevie-navbar.navbar-default .navbar-toggle:hover,
+#eevie-navbar.navbar-default .navbar-toggle:focus {
+    background-color:#3CC47C;
+    border-color:#37B371;
+}
+#eevie-navbar.navbar-default .navbar-toggle .icon-bar {
+    background-color:#3CC47C;
+    border-color:#37B371;
+}
+#eevie-navbar.navbar-default .navbar-toggle:hover .icon-bar,
+#eevie-navbar.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #646477;
+    border-color: #5B5B6D;
+}

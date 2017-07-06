@@ -1,0 +1,19 @@
+﻿.othead-name{
+    width: 40.7%;
+}
+
+.othead-author{
+    width: 35%;
+}
+
+.otdata-name{
+    width: 41%;
+}
+.otdata-author{
+    width: 35%;
+    font-size: 12px;
+}
+
+.tbl-content{
+    height:287px;
+}
